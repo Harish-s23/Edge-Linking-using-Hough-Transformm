@@ -23,8 +23,8 @@ Using Canny operator from cv2,detect the edges of the image.
 Using the HoughLinesP(),detect line co-ordinates for every points in the images.Using For loop,draw the lines on the found co-ordinates.Display the image.
 ## Program:
 ```
-# Developed By: HAREESH R
-# Register Number: 212223230068
+# Developed By: HARESH R
+# Register Number: 212224040097
 import cv2
 import matplotlib.pyplot as plt
 image = cv2.imread(r'C:\Users\admin\Downloads\eif.jpeg')  # Replace with your image path
@@ -34,10 +34,11 @@ plt.title('Input Image')
 plt.axis('off')
 plt.show()
 ```
-![download](https://github.com/user-attachments/assets/f480d966-9dd2-4135-97d2-08d4986113c7)
+![Screenshot 2025-05-03 110534](https://github.com/user-attachments/assets/75e5d38d-ff0e-4d72-becd-1453e00e2ede)
+
 ```
-# Developed By: HAREESH R
-# Register Number: 212223230068
+# Developed By: HARESH R
+# Register Number: 212224040097
 
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
@@ -47,13 +48,13 @@ plt.title('Grayscale Image')
 plt.axis('off')
 plt.show()
 ```
-![download](https://github.com/user-attachments/assets/a22afc37-e376-4f9b-a31e-cb7ba91829cb)
 
+![Screenshot 2025-05-03 110545](https://github.com/user-attachments/assets/c2abbcde-08d6-4e93-892b-3242f830502b)
 
 
 ```
-# Developed By: HAREESH R
-# Register Number: 212223230068
+# Developed By: HARESH R
+# Register Number: 212224040097
 
 edges = cv2.Canny(gray_image, 50, 150, apertureSize=3)
 # Display Canny Edge Detection Output   
@@ -62,7 +63,7 @@ plt.title('Canny Edge Detector Output')
 plt.axis('off')
 plt.show()
 ```
-![download](https://github.com/user-attachments/assets/5bc8a797-6566-40df-80b4-5e0ee6303fc7)
+![Screenshot 2025-05-03 110557](https://github.com/user-attachments/assets/d45b41cc-96f3-4a2d-95cb-0cece78fa14e)
 
 
 ```
@@ -79,15 +80,15 @@ if lines is not None:
 
 ```
 ```
-# Developed By: HAREESH R
-# Register Number: 212223230068# Display Hough Transform Result
+# Developed By: HARESH R
+# Register Number: 212224040097# Display Hough Transform Result
 plt.imshow(cv2.cvtColor(output_image, cv2.COLOR_BGR2RGB))
 plt.title('Hough Transform - Line Detection')
 plt.axis('off')
 plt.show()
 
 ```
-![download](https://github.com/user-attachments/assets/895bc021-03c8-403e-87a3-b80f95f5220f)
+![Screenshot 2025-05-03 110614](https://github.com/user-attachments/assets/11adedd5-b45f-4c7a-99b9-4fe5d24d9a41)
 
 
 ## Result: 
